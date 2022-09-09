@@ -36,7 +36,6 @@ public class Gondolatolvaso {
 
         }
     }
-    
 
     private static void keveres(int tipp) {
 
@@ -45,7 +44,7 @@ public class Gondolatolvaso {
     private static void kiiras() {
         for (int i = 0; i < pakli.length; i++) {
             System.out.print(pakli[i] + "\t");
-            if(i % Szinek.values().length == Szinek.values().length -1){
+            if (i % Szinek.values().length == Szinek.values().length - 1) {
                 System.out.println("");
             }
         }
