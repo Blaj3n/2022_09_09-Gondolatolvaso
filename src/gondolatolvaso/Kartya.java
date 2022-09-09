@@ -1,14 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package gondolatolvaso;
 
-/**
- *
- * @author bence
- */
 public class Kartya {
+
+    szinek szin;
+    ertekek ertek;
+    
+    public Kartya(szinek szin, ertekek ertek) {
+        this.szin = szin;
+        this.ertek = ertek;
+    }
     
 }
+
