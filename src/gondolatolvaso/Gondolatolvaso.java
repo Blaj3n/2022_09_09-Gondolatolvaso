@@ -13,9 +13,11 @@ public class Gondolatolvaso {
     public static String ertekek[] = {"VIII", "IX", "X", "ALS","FEL", "KIR", "ASZ"};
 
     public static void main(String[] args) {
+        kiiras();
         for (int i = 0; i < 3; i++) {
             tipp();
             keveres();
+            kiiras();
         }
     }
 
@@ -25,7 +27,7 @@ public class Gondolatolvaso {
         int tipp = sc.nextInt();
         return tipp;
     }
-    public static String[] keveres() {
+    public static String[] kiiras() {
         for (int i = 0; i < szinek.length; i++) {
             for (int j = 0; j < ertekek.length; j++) {
                 pakli[i*ertekek.length+j] = szinek[i] + "_" + ertekek[j];
@@ -36,5 +38,11 @@ public class Gondolatolvaso {
         System.out.println(Arrays.toString(pakli));
         return pakli;
     }
+
+    private static void keveres() {
+        
+    }
+
+
 
 }
