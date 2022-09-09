@@ -1,6 +1,7 @@
 package gondolatolvaso;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Gondolatolvaso {
 
@@ -12,9 +13,18 @@ public class Gondolatolvaso {
     public static String ertekek[] = {"VIII", "IX", "X", "ALS","FEL", "KIR", "ASZ"};
 
     public static void main(String[] args) {
-        keveres();
+        for (int i = 0; i < 3; i++) {
+            tipp();
+            keveres();
+        }
     }
 
+    public static int tipp(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Melyik oszlopban van a kártyád?");
+        int tipp = sc.nextInt();
+        return tipp;
+    }
     public static String[] keveres() {
         for (int i = 0; i < szinek.length; i++) {
             for (int j = 0; j < ertekek.length; j++) {
